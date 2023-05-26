@@ -10,7 +10,8 @@
     "build:js": "babel ./src --out-dir ./dist --ignore test.js",
     "lint": "eslint 'src/**/*.js'",
     "test": "jest",
-    "preversion": "npm run clear && npm run build"
+    "preversion": "npm run clear && npm run build",
+    "prepare": "npm run build"
   },
   "keywords": [
     "react",
